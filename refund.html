@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0d0d12" />
+  <title>Refund & Cancellation Policy | ApnaJeet</title>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Poppins", sans-serif; }
+    body {
+      background: radial-gradient(circle at top, #0a0a12, #050507);
+      color: #eee;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 70px;
+      line-height: 1.7;
+    }
+
+    nav {
+      position: fixed; top: 0; left: 0; width: 100%;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      display: flex; justify-content: center;
+      padding: 12px 0; z-index: 999;
+    }
+    nav a {
+      color: #aaa; text-decoration: none; margin: 0 15px;
+      font-size: 15px; letter-spacing: 0.5px; transition: 0.3s; position: relative;
+    }
+    nav a:hover, nav a.active { color: #14ffec; }
+    nav a::after {
+      content: ""; position: absolute; bottom: -5px; left: 0;
+      width: 0%; height: 2px; background: #14ffec; transition: width 0.3s ease;
+    }
+    nav a:hover::after, nav a.active::after { width: 100%; }
+
+    .card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px; padding: 25px;
+      width: 90%; max-width: 850px;
+      box-shadow: 0 0 20px rgba(20, 255, 236, 0.08);
+      backdrop-filter: blur(8px);
+      margin-bottom: 50px;
+      animation: fadeIn 1.2s ease;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      background: linear-gradient(90deg, #14ffec, #00b3ff, #9c42f5);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      text-align: center; margin-bottom: 10px; letter-spacing: 1px;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(10px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    h2 { color: #00e6f6; margin-top: 25px; }
+    ul { margin-left: 20px; margin-top: 10px; }
+    li { margin-bottom: 8px; color: #ccc; }
+
+    footer {
+      font-size: 13px; color: #777;
+      margin: 20px 0 10px; text-align: center;
+    }
+    footer span { color: #14ffec; }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="refund.html" class="active">Refund</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="card">
+    <h1>Refund & Cancellation Policy</h1>
+    <p><strong>Last Updated:</strong> November 2025</p>
+    <p>At <b>ApnaJeet</b>, developed by <b>FFTM Labs</b>, we maintain transparency and fairness in all coin and tournament transactions.</p>
+
+    <h2>1. Tournament Entries</h2>
+    <p>Once a user registers for a tournament using coins, the entry fee is non-refundable unless the tournament is officially cancelled by the admin.</p>
+
+    <h2>2. System Errors</h2>
+    <p>In case of any technical issues, users may contact support with screenshots or transaction IDs for refund review.</p>
+
+    <h2>3. Withdrawal Requests</h2>
+    <p>Withdrawals once processed cannot be reversed. Ensure your UPI details are correct before requesting payout.</p>
+
+    <h2>4. Fraud Prevention</h2>
+    <p>Refunds will be denied if any fraudulent or exploitative activity is detected. Accounts found guilty of manipulation will be permanently banned.</p>
+
+    <h2>5. Responsible Gaming</h2>
+    <p>ApnaJeet is a skill-based platform for users aged <b>18 years and above</b>. We encourage fair play and discourage repetitive withdrawal misuse.</p>
+
+    <h2>6. Contact for Refunds</h2>
+    <p>For refund-related issues, email our support team:  
+      📧 <a href="mailto:apnajeet.fftmlabs@gmail.com">apnajeet.fftmlabs@gmail.com</a>
+    </p>
+  </div>
+
+  <footer>
+    © 2025 <span>FFTM Labs</span> • Transparent • Secure • Fair Gameplay
+  </footer>
+</body>
+</html>
