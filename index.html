@@ -19,46 +19,30 @@
       line-height: 1.7;
     }
 
-    /* 🔹 NAVBAR */
     nav {
-      position: fixed;
-      top: 0; left: 0; width: 100%;
+      position: fixed; top: 0; left: 0; width: 100%;
       background: rgba(255,255,255,0.05);
       backdrop-filter: blur(10px);
       border-bottom: 1px solid rgba(255,255,255,0.08);
-      display: flex;
-      justify-content: center;
-      padding: 12px 0;
-      z-index: 999;
+      display: flex; justify-content: center;
+      padding: 12px 0; z-index: 999;
     }
     nav a {
-      color: #aaa;
-      text-decoration: none;
-      margin: 0 15px;
-      font-size: 15px;
-      letter-spacing: 0.5px;
-      transition: 0.3s;
-      position: relative;
+      color: #aaa; text-decoration: none; margin: 0 15px;
+      font-size: 15px; letter-spacing: 0.5px; transition: 0.3s; position: relative;
     }
     nav a:hover, nav a.active { color: #14ffec; }
     nav a::after {
-      content: "";
-      position: absolute;
-      bottom: -5px; left: 0;
-      width: 0%; height: 2px;
-      background: #14ffec;
-      transition: width 0.3s ease;
+      content: ""; position: absolute; bottom: -5px; left: 0;
+      width: 0%; height: 2px; background: #14ffec; transition: width 0.3s ease;
     }
     nav a:hover::after, nav a.active::after { width: 100%; }
 
-    /* 🔹 PAGE CONTENT */
     .card {
       background: rgba(255, 255, 255, 0.03);
       border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 16px;
-      padding: 25px;
-      width: 90%;
-      max-width: 850px;
+      border-radius: 16px; padding: 25px;
+      width: 90%; max-width: 850px;
       box-shadow: 0 0 20px rgba(20, 255, 236, 0.08);
       backdrop-filter: blur(8px);
       margin-bottom: 50px;
@@ -68,11 +52,8 @@
     h1 {
       font-size: 1.8rem;
       background: linear-gradient(90deg, #14ffec, #00b3ff, #9c42f5);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-align: center;
-      margin-bottom: 10px;
-      letter-spacing: 1px;
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      text-align: center; margin-bottom: 10px; letter-spacing: 1px;
     }
 
     @keyframes fadeIn {
@@ -85,17 +66,16 @@
     li { margin-bottom: 8px; color: #ccc; }
 
     footer {
-      font-size: 13px;
-      color: #777;
-      margin: 20px 0 10px;
-      text-align: center;
+      font-size: 13px; color: #777;
+      margin: 20px 0 10px; text-align: center;
     }
     footer span { color: #14ffec; }
+    footer a { color: #14ffec; text-decoration: none; margin: 0 8px; }
+    footer a:hover { text-decoration: underline; }
   </style>
 </head>
 
 <body>
-  <!-- 🔹 NAVBAR -->
   <nav>
     <a href="index.html" class="active">Privacy</a>
     <a href="terms.html">Terms</a>
@@ -103,53 +83,39 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <!-- 🔹 MAIN CONTENT -->
   <div class="card">
     <h1>Privacy Policy</h1>
     <p><strong>Last Updated:</strong> November 2025</p>
-    <p>Welcome to <b>ApnaJeet</b> — an eSports tournament platform powered by <b>FFTM Labs</b>. We value your privacy and are committed to protecting your personal data. This policy explains how we collect, store, and use your information securely.</p>
+    <p>Welcome to <b>ApnaJeet</b>, an eSports platform powered by <b>FFTM Labs</b>. We value your privacy and ensure your data is handled securely and transparently.</p>
 
-    <h2>1. Information We Collect</h2>
+    <h2>Information We Collect</h2>
     <ul>
-      <li>Google Account info (name, email, UID)</li>
-      <li>Game details (UID, username, category)</li>
-      <li>Device ID (for one-device-one-account binding)</li>
-      <li>In-app activity such as tournament joins or ad views</li>
+      <li>Google account info (name, email, UID)</li>
+      <li>Game UID and username</li>
+      <li>Device ID for one-device-one-account binding</li>
     </ul>
 
-    <h2>2. How We Use Your Data</h2>
+    <h2>Security</h2>
+    <p>Data is protected using <b>AES-256 encryption</b> and <b>JWT authentication</b>. Rooted or emulated devices are blocked automatically.</p>
+
+    <h2>Age Policy</h2>
+    <p>ApnaJeet is intended for users aged <b>18 years and above</b>. We promote responsible and skill-based gaming only.</p>
+
+    <h2>Third-Party Services</h2>
     <ul>
-      <li>To verify and authenticate users via Firebase</li>
-      <li>To manage tournaments, leaderboards, and rewards</li>
-      <li>To process withdrawals securely after admin verification</li>
-      <li>To prevent fraud, duplicate accounts, and hacking attempts</li>
+      <li>Firebase Authentication</li>
+      <li>AdMob (rewarded ads)</li>
+      <li>Google Pay / UPI (manual withdrawals)</li>
     </ul>
 
-    <h2>3. Security Measures</h2>
-    <p>All user data is protected by <b>AES-256 encryption</b> and <b>JWT authentication</b>. We employ <b>device binding</b>, <b>root detection</b>, and <b>anti-cheat protection</b> to prevent misuse.  
-    Coins and rewards are verified through server signatures, ensuring data integrity.</p>
-
-    <h2>4. Age Policy</h2>
-    <p>This app is intended for users aged <b>18 years and above</b>. We promote responsible gaming and do not knowingly collect information from minors under 18.</p>
-
-    <h2>5. Third-Party Services</h2>
-    <ul>
-      <li>Firebase Authentication & Firestore (for secure login & data storage)</li>
-      <li>AdMob (for rewarded ads and analytics)</li>
-      <li>UPI / Google Pay (for manual withdrawal handling)</li>
-    </ul>
-
-    <h2>6. Data Retention & Deletion</h2>
-    <p>Users can request account deletion anytime via email. Upon deletion, all related tournament, ad, and coin records are permanently removed from our servers.</p>
-
-    <h2>7. Contact Us</h2>
-    <p>For any privacy-related issues or requests, please contact:  
-    📧 <a href="mailto:apnajeet.fftmlabs@gmail.com">apnajeet.fftmlabs@gmail.com</a></p>
-
+    <h2>Contact</h2>
+    <p>📧 <a href="mailto:apnajeet.fftmlabs@gmail.com">apnajeet.fftmlabs@gmail.com</a></p>
   </div>
 
   <footer>
-    © 2025 <span>FFTM Labs</span> • Secure • Transparent • Skill-Based Gaming
+    © 2025 <span>FFTM Labs</span> • Secure • Transparent • Skill-Based Gaming <br>
+    <a href="https://www.instagram.com/fftmlabs?igsh=N2IxdnlyazJ2dDJp" target="_blank">Instagram</a> |
+    <a href="https://youtube.com/@ff_tm_labs?si=u_IBXtCdK3quFEx8" target="_blank">YouTube</a>
   </footer>
 </body>
 </html>
