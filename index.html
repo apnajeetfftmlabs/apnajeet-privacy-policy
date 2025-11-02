@@ -1,80 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy - ApnaJeet</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0d0d12" />
+  <title>Privacy Policy | ApnaJeet</title>
+
   <style>
-    body {
+    /* ---- Base Styles ---- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       font-family: "Poppins", sans-serif;
-      background-color: #0D0A1E;
-      color: #EDEDED;
-      line-height: 1.6;
+    }
+    body {
+      background: radial-gradient(circle at top, #0a0a12, #050507);
+      color: #eee;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
       padding: 30px;
+      line-height: 1.7;
     }
+
+    /* ---- Header ---- */
+    h1 {
+      font-size: 1.8rem;
+      background: linear-gradient(90deg, #14ffec, #00b3ff, #9c42f5);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+      animation: fadeDown 1.5s ease;
+    }
+
+    @keyframes fadeDown {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    .subtitle {
+      color: #aaa;
+      font-size: 0.9rem;
+      margin-bottom: 25px;
+      animation: fadeUp 1.5s ease;
+    }
+
+    @keyframes fadeUp {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    /* ---- Container ---- */
+    .card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 25px;
+      width: 95%;
+      max-width: 850px;
+      box-shadow: 0 0 20px rgba(20, 255, 236, 0.08);
+      backdrop-filter: blur(8px);
+      animation: glowIn 2s ease;
+    }
+
+    @keyframes glowIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
     h2 {
-      color: #FACC15;
+      color: #00e6f6;
+      margin-top: 25px;
+      font-size: 1.2rem;
     }
+
+    ul {
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      color: #ccc;
+    }
+
     a {
-      color: #00BFFF;
+      color: #00b3ff;
+      text-decoration: none;
     }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
     footer {
       margin-top: 40px;
-      font-size: 14px;
+      font-size: 0.8rem;
+      color: #777;
       text-align: center;
-      color: #AAA;
+    }
+
+    footer span {
+      color: #14ffec;
     }
   </style>
 </head>
+
 <body>
 
-<h2>Privacy Policy for ApnaJeet</h2>
+  <h1>ApnaJeet Privacy Policy</h1>
+  <p class="subtitle">Last Updated: November 2025</p>
 
-<p><strong>Last Updated:</strong> November 2025</p>
+  <div class="card">
 
-<p>ApnaJeet, developed by <strong>FFTM Labs</strong>, respects and protects your privacy. 
-This Privacy Policy explains how we collect, use, and protect your data when you use our app.</p>
+    <p><b>ApnaJeet</b>, developed by <b>FFTM Labs</b>, respects and protects your privacy. This Privacy Policy explains how we collect, use, and protect your data when you use our app.</p>
 
-<h3>Information We Collect</h3>
-<ul>
-  <li>Google account name, email, and unique user ID (for authentication)</li>
-  <li>Game UID and in-app profile data (for tournament participation)</li>
-  <li>Device information (for account security and device binding)</li>
-</ul>
+    <h2>Information We Collect</h2>
+    <ul>
+      <li>Google account name, email, and user ID (for authentication)</li>
+      <li>Game UID and in-app profile data (for tournament participation)</li>
+      <li>Device info for account binding & security</li>
+    </ul>
 
-<h3>How We Use Your Data</h3>
-<ul>
-  <li>To authenticate users securely via Google Firebase</li>
-  <li>To store tournament participation and leaderboard records</li>
-  <li>To process manual reward requests and prevent fraud</li>
-</ul>
+    <h2>How We Use Your Data</h2>
+    <ul>
+      <li>Authenticate users via Google Firebase</li>
+      <li>Store tournament participation and leaderboard records</li>
+      <li>Process manual reward and withdrawal requests</li>
+    </ul>
 
-<h3>Data Security</h3>
-<p>All user data is stored securely in <strong>Google Firebase</strong> with AES-256 encryption. 
-We use Firebase Authentication, Firestore, and Cloud Functions to verify all actions. 
-No financial or payment information is stored on our servers.</p>
+    <h2>Data Security</h2>
+    <p>All data is securely stored in <b>Google Firebase</b> with <b>AES-256 encryption</b>. No payment or sensitive personal data is stored on our servers.</p>
 
-<h3>Third-Party Services</h3>
-<p>ApnaJeet uses the following services for secure functionality:</p>
-<ul>
-  <li>Google Firebase (Authentication, Firestore, Cloud Storage)</li>
-  <li>Google AdMob (for rewarded ads)</li>
-</ul>
+    <h2>Third-Party Services</h2>
+    <ul>
+      <li>Google Firebase (Authentication, Firestore, Cloud Storage)</li>
+      <li>Google AdMob (Rewarded Ads)</li>
+    </ul>
 
-<h3>Children’s Privacy</h3>
-<p>This app is intended for users aged 13 and above. 
-We do not knowingly collect data from children under 13 years of age.</p>
+    <h2>Children’s Privacy</h2>
+    <p>This app is intended for users aged 13 and above. We do not knowingly collect data from children under 13.</p>
 
-<h3>Data Deletion or Support</h3>
-<p>If you want to delete your account or request data removal, please contact us at:<br>
-📧 <a href="mailto:apnajeet.fftmlabs@gmail.com">apnajeet.fftmlabs@gmail.com</a></p>
+    <h2>Data Deletion or Support</h2>
+    <p>To delete your data or request removal, email us at:
+      <a href="mailto:apnajeet.fftmlabs@gmail.com">apnajeet.fftmlabs@gmail.com</a>
+    </p>
 
-<h3>Legal Compliance</h3>
-<p>ApnaJeet is a <strong>skill-based eSports tournament platform</strong> and does not support or promote gambling, betting, or any chance-based games.</p>
+    <h2>Legal Compliance</h2>
+    <p><b>ApnaJeet</b> is a <b>skill-based eSports tournament platform</b>.  
+      It does not promote gambling, betting, or chance-based gaming of any kind.</p>
 
-<footer>
-  © 2025 FFTM Labs. All rights reserved.  
-</footer>
+  </div>
+
+  <footer>
+    © 2025 <span>FFTM Labs</span>. All rights reserved.  
+    <br>Secure • Transparent • Skill-Based Gaming
+  </footer>
 
 </body>
 </html>
