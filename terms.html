@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0d0d12" />
+  <title>Terms & Conditions | ApnaJeet</title>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Poppins", sans-serif; }
+    body {
+      background: radial-gradient(circle at top, #0a0a12, #050507);
+      color: #eee;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 70px;
+      line-height: 1.7;
+    }
+
+    /* 🔹 NAVBAR */
+    nav {
+      position: fixed;
+      top: 0; left: 0; width: 100%;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      display: flex;
+      justify-content: center;
+      padding: 12px 0;
+      z-index: 999;
+    }
+    nav a {
+      color: #aaa;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 15px;
+      letter-spacing: 0.5px;
+      transition: 0.3s;
+      position: relative;
+    }
+    nav a:hover, nav a.active { color: #14ffec; }
+    nav a::after {
+      content: "";
+      position: absolute;
+      bottom: -5px; left: 0;
+      width: 0%; height: 2px;
+      background: #14ffec;
+      transition: width 0.3s ease;
+    }
+    nav a:hover::after, nav a.active::after { width: 100%; }
+
+    /* 🔹 PAGE CONTENT */
+    .card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 25px;
+      width: 90%;
+      max-width: 850px;
+      box-shadow: 0 0 20px rgba(20, 255, 236, 0.08);
+      backdrop-filter: blur(8px);
+      margin-bottom: 50px;
+      animation: fadeIn 1.2s ease;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      background: linear-gradient(90deg, #14ffec, #00b3ff, #9c42f5);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(10px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    h2 { color: #00e6f6; margin-top: 25px; }
+    ul { margin-left: 20px; margin-top: 10px; }
+    li { margin-bottom: 8px; color: #ccc; }
+
+    footer {
+      font-size: 13px;
+      color: #777;
+      margin: 20px 0 10px;
+      text-align: center;
+    }
+    footer span { color: #14ffec; }
+  </style>
+</head>
+
+<body>
+  <!-- 🔹 NAVBAR -->
+  <nav>
+    <a href="index.html">Privacy</a>
+    <a href="terms.html" class="active">Terms</a>
+    <a href="refund.html">Refund</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- 🔹 MAIN CONTENT -->
+  <div class="card">
+    <h1>Terms & Conditions</h1>
+    <p><strong>Last Updated:</strong> November 2025</p>
+
+    <p>Welcome to <b>ApnaJeet</b> — India’s secure, skill-based eSports tournament platform developed by <b>FFTM Labs</b>. By accessing or using our app, you agree to the following terms and conditions.</p>
+
+    <h2>1. Eligibility</h2>
+    <p>This app is intended for users aged <b>18 years and above</b>. Minors under 18 are not permitted to participate in tournaments, make purchases, or request withdrawals.</p>
+
+    <h2>2. Skill-Based Platform</h2>
+    <p>ApnaJeet hosts skill-based tournaments for games like Free Fire, BGMI, CODM, etc. All outcomes are determined purely by player performance, not chance or luck. ApnaJeet does not support gambling or betting.</p>
+
+    <h2>3. Account & Device Security</h2>
+    <ul>
+      <li>Each device is bound to one unique account (1 Device = 1 Account).</li>
+      <li>Rooted or emulator devices are strictly prohibited.</li>
+      <li>Using multiple accounts, cheats, or modified clients will result in a permanent ban.</li>
+    </ul>
+
+    <h2>4. Coin System & Rewards</h2>
+    <ul>
+      <li>Coins represent in-app virtual credits with no cash value.</li>
+      <li>Coins can be earned by watching ads or purchased voluntarily via UPI.</li>
+      <li>Joining a tournament deducts coins as an entry fee.</li>
+      <li>Rewards are added manually after admin verification of match results.</li>
+    </ul>
+
+    <h2>5. Withdrawals</h2>
+    <p>Withdrawals are verified manually to prevent fraud. Incorrect UPI details or fake accounts may lead to rejection. Users can only withdraw after reaching the minimum coin threshold.</p>
+
+    <h2>6. Prohibited Activities</h2>
+    <ul>
+      <li>Fake or duplicate accounts</li>
+      <li>Impersonating other players</li>
+      <li>Hacking or exploiting the app system</li>
+      <li>Using scripts or automation for ads or tournaments</li>
+    </ul>
+
+    <h2>7. Limitation of Liability</h2>
+    <p>FFTM Labs shall not be held liable for technical issues, internet failures, or misuse of user credentials. By using this app, you acknowledge that participation is voluntary and skill-based.</p>
+
+    <h2>8. Changes to Terms</h2>
+    <p>We reserve the right to modify these Terms & Conditions at any time. Updates will be posted within the app and on our official GitHub-hosted legal portal.</p>
+
+    <h2>9. Contact Us</h2>
+    <p>For any legal or account-related questions, contact:  
+      📧 <a href="mailto:apnajeet.fftmlabs@gmail.com">apnajeet.fftmlabs@gmail.com</a>
+    </p>
+  </div>
+
+  <footer>
+    © 2025 <span>FFTM Labs</span> • Secure • Transparent • Skill-Based Gaming
+  </footer>
+</body>
+  </html>
